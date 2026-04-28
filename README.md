@@ -173,6 +173,74 @@ The built files will be in the `.next` directory.
 5. Test your changes
 6. Submit a pull request
 
+## 🎨 Styling Details
+
+The project uses **Tailwind CSS 4** with PostCSS for styling:
+
+- **Color Scheme**: Primary blue (`#0060aa`), accent yellow (`#fbbf24`)
+- **Utility Classes**: Responsive design with md: breakpoints for tablet and desktop
+- **Custom Styles**: Global styles in `globals.css`
+- **Components**: Styled with Tailwind utility classes throughout
+
+### Color Reference
+- Primary: `#0060aa` (Professional blue)
+- Accent: `#fbbf24` (Yellow highlights)
+- Secondary: Blues, greens for feature sections
+
+## 🌍 Environment Setup
+
+### Environment Variables
+Currently, no `.env.local` file is required. If needed in the future:
+
+```bash
+cp .env.example .env.local
+```
+
+### Development Environment
+- Node.js 18+
+- npm 8+
+- Git for version control
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**Issue: `npm install` fails with dependency conflicts**
+```bash
+# Try clearing npm cache and reinstalling
+npm cache clean --force
+rm -rf node_modules package-lock.json
+npm install
+```
+
+**Issue: `npm audit fix` returns exit code 1**
+```bash
+# View vulnerabilities without fixing
+npm audit
+
+# Fix only safe vulnerabilities
+npm audit fix --audit-level=moderate
+```
+
+**Issue: Development server won't start**
+```bash
+# Kill any existing processes on port 3000
+# Then restart
+npm run dev
+```
+
+**Issue: Tailwind styles not applying**
+- Ensure all component files end with `.tsx` or `.ts`
+- Check that className strings don't have template literals without variables
+- Restart the dev server if styles don't update
+
+## 📚 Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://react.dev)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs)
+
 ## 📄 License
 
 This project is private and proprietary to Little Millennium.</content>
