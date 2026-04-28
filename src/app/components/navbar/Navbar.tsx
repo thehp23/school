@@ -15,12 +15,12 @@ const Navbar = () => {
 
   return (
     <nav className="w-full shadow-md bg-[#0060aa] text-white">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
         
         {/* Logo */}
         <div className="w-auto">
           <Image
-            src="/logo.png"
+            src="/intro-images/logo.png"
             alt="Logo"
             width={110}
             height={45}

@@ -42,13 +42,13 @@ const SkillsSlider = () => {
 
           {/* Slides Wrapper */}
           <div
-            className="flex transition-transform duration-700 ease-in-out"
+            className="flex transition-transform duration-700 ease-in-out py-4"
             style={{ transform: `translateX(-${current * 100}%)` }}
           >
             {slides.map((group, i) => (
               <div
                 key={i}
-                className="min-w-full grid grid-cols-2 md:grid-cols-4 gap-6"
+                className="min-w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
               >
                 {group.map((img, index) => (
                   <div

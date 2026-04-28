@@ -17,7 +17,7 @@ const FeatureGrid = () => {
           <div
             onMouseEnter={() => setActive("left-top")}
             className={`transition-all duration-500 rounded-2xl p-4 shadow-md bg-blue-200 cursor-pointer ${
-              active === "left-top" ? "h-[320px]" : "h-[120px]"
+              active === "left-top" ? "h-full" : "h-[120px]"
             }`}
           >
             {active === "left-top" && (
@@ -30,7 +30,7 @@ const FeatureGrid = () => {
                 />
               </div>
             )}
-            <p className="font-semibold">
+            <p className="font-semibold  flex  items-end">
               Safe & Stimulating Learning Spaces
             </p>
           </div>
@@ -39,7 +39,7 @@ const FeatureGrid = () => {
           <div
             onMouseEnter={() => setActive("left-bottom")}
             className={`transition-all duration-500 rounded-2xl p-4 shadow-md bg-green-200 cursor-pointer ${
-              active === "left-bottom" ? "h-[320px]" : "h-[120px]"
+              active === "left-bottom" ? "h-full" : "h-[120px]"
             }`}
           >
             {active === "left-bottom" && (
@@ -81,7 +81,7 @@ const FeatureGrid = () => {
           <div
             onMouseEnter={() => setActive("right-top")}
             className={`transition-all duration-500 rounded-2xl p-4 shadow-md bg-purple-200 cursor-pointer ${
-              active === "right-top" ? "h-[320px]" : "h-[120px]"
+              active === "right-top" ? "h-full" : "h-[120px]"
             }`}
           >
             {active === "right-top" && (

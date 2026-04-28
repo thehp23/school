@@ -17,7 +17,7 @@ const images = [
     alt: "Slide 3",
   },
   {
-    src: "/intro-images/fourth.png",
+    src: "/intro-images/desktop-home.webp",
     alt: "Slide 4",
   },
 ];
